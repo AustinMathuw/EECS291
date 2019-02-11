@@ -42,7 +42,11 @@ JSON Request Handler: https://github.com/OSC/ood-activejobs/blob/master/app/mode
 
 ## Job Composer
 
-**Info:** See [here](https://stackoverflow.com/questions/10413803/getting-csrf-tokens-for-json-post-requests-to-a-rails-app) for a good explanation and how to put authenticity_token into json. Technically, this can be scrapped from any of the below requests if put in http response. TODO: Investigate an dedicated endpoint for this or update returned json to include this token.
+#### Info
+ See [here](https://stackoverflow.com/questions/10413803/getting-csrf-tokens-for-json-post-requests-to-a-rails-app) for a good explanation and how to put authenticity_token into json. Technically, this can be scrapped from any of the below requests if put in http response. TODO: Investigate an dedicated endpoint for this or update returned json to include this token.
+
+#### Refrence 
+https://github.com/OSC/ood-myjobs/search?q=json&unscoped_q=json
 
 ### Get My Jobs
 
@@ -190,3 +194,35 @@ Params: N/A
 #### Description
 
 Delete a job. Returns JSON object of the job deleted.
+
+### Create Template
+
+Path: `/pun/sys/myjobs/templates.json`
+
+Method: `POST`
+
+Params: N/A
+
+form-data: 
+* `authenticity_token` - Required. See Job Composer info...
+* `workflow[path]:<PATH_TO_SOURCE>` - Required. The template will be created by copying files from this source path
+* `workflow[name]:<NAME_OF_JOB>` - Required
+* `workflow[batch_host]:<NAME_OF_CLUSTER>` - Required
+* `workflow[script_name]:<NAME_OF_SCRIPT>` - Required. The job script.
+* `workflow[notes]:<ACCOUNT>` - Note appear in the manifest.yml located in the created template's directory
+
+#### Description
+
+Creates a template that can be used to create jobs. Returns template as JSON object.
+
+### Delete Template
+
+Path: `/pun/sys/myjobs/templates/<TEMPLATE_ID>.json`
+
+Method: `DELETE`
+
+Params: N/A
+
+#### Description
+
+Deletes a job template. Returns template as JSON object.
