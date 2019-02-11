@@ -1,7 +1,5 @@
 # Open On Demand JSON API Docs
 
-API
-
 ## Important Info
 NEEDED FOR ALL CALLS!
 Get cookie from SSO
