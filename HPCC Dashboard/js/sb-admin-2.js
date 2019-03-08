@@ -46,4 +46,57 @@
     e.preventDefault();
   });
 
+  $(document).ready(function() {
+    setCookie('MOD_AUTH_CAS_S','3cbb605155fd4dd7234195302d954755','/pun/sys/','',100);
+
+    var settings = {
+      "async": true,
+      "crossDomain": true,
+      "url": "https://ondemand.case.edu/pun/sys/activejobs/json?jobcluster=all&jobfilter=all",
+      "method": "GET",
+      "xhrFields": {
+        "withCredentials": true
+      }
+    }
+    
+    $.ajax(settings).done(function (response) {
+
+      console.log(response);
+      onResponse();
+    });
+  });
+
 })(jQuery); // End of use strict
+
+function onResponse() {
+
+  var loadingDiv = document.getElementById("loading_div");
+  var contentDiv = document.getElementById("content_div");
+
+  loadingDiv.style = "display: none";
+  contentDiv.style = "display: block";
+}
+
+function setCookie(name,value,path,domain,days) {
+  var expires = "";
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; Expires=" + date.toUTCString();
+  }
+  console.log(name + "=" + (value || "")  + expires + "; path=" + path);
+  document.cookie = name + "=" + (value || "")  + expires + "; path=" + path;
+}
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+function eraseCookie(name) {   
+  document.cookie = name+'=; Max-Age=-99999999;';  
+}
