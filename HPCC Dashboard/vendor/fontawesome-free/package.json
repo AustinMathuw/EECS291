@@ -2,7 +2,7 @@
   "_args": [
     [
       "@fortawesome/fontawesome-free@5.7.2",
-      "/Users/austinwilson/Desktop/EECS Independent Projects/HPCC Dashboard"
+      "C:\\Users\\sirau\\Desktop\\EECS Independent Projects\\HPCC Dashboard"
     ]
   ],
   "_from": "@fortawesome/fontawesome-free@5.7.2",
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.7.2.tgz",
   "_spec": "5.7.2",
-  "_where": "/Users/austinwilson/Desktop/EECS Independent Projects/HPCC Dashboard",
+  "_where": "C:\\Users\\sirau\\Desktop\\EECS Independent Projects\\HPCC Dashboard",
   "author": {
     "name": "Dave Gandy",
     "email": "dave@fontawesome.com",

@@ -46,36 +46,7 @@
     e.preventDefault();
   });
 
-  $(document).ready(function() {
-    setCookie('MOD_AUTH_CAS_S','3cbb605155fd4dd7234195302d954755','/pun/sys/','',100);
-
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": "https://ondemand.case.edu/pun/sys/activejobs/json?jobcluster=all&jobfilter=all",
-      "method": "GET",
-      "xhrFields": {
-        "withCredentials": true
-      }
-    }
-    
-    $.ajax(settings).done(function (response) {
-
-      console.log(response);
-      onResponse();
-    });
-  });
-
 })(jQuery); // End of use strict
-
-function onResponse() {
-
-  var loadingDiv = document.getElementById("loading_div");
-  var contentDiv = document.getElementById("content_div");
-
-  loadingDiv.style = "display: none";
-  contentDiv.style = "display: block";
-}
 
 function setCookie(name,value,path,domain,days) {
   var expires = "";
