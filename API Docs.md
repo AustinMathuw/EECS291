@@ -2,8 +2,8 @@
 
 # Table of contents
 1. [Introduction](#introduction)
-2. [Important Info](#paragraph1)
-3. [API General Info](#paragraph2)
+2. [Important Info](#imprtinfo)
+3. [API General Info](#geninfo)
 4. [Active Jobs](#activejobs)
     * [Get All Jobs](#getjobs)
 5. [Job Composer](#jobcomposer)
