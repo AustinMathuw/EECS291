@@ -1,19 +1,42 @@
-# Open On Demand JSON API Docs
+# OpenOnDemand JSON API Docs
 
-## Important Info
+# Table of contents
+1. [Introduction](#introduction)
+2. [Important Info](#paragraph1)
+3. [API General Info](#paragraph2)
+4. [Active Jobs](#activejobs)
+    * [Get All Jobs](#getjobs)
+5. [Job Composer](#jobcomposer)
+    * [Get My Jobs](#getmyjobs)
+    * [Get User Jobs](#getuserjobs)
+    * [Get Job by ID](#getjobid)
+    * [Create Job without Template](#createjobnotemplate)
+    * [Create Default Job](#createdefaultjob)
+    * [Create Job from Template Path](#createjobfrompath)
+    * [Copy Job](#copyjob)
+    * [Submit Job by ID](#submitjobbyid)
+    * [Stop Job](#stopjob)
+    * [Update Job](#updatejob)
+    * [Delete Job by ID](#deletejobbyid)
+    * [Create Job Template](#createjobtemplate)
+    * [Delete Job Template](#deletejobtemplate)
+
+## Introduction <a name="introduction"></a>
+This documentation was created to expose OpenOnDemand to allow for developers to create better standalone applications. This will help researchers test and analyze their research tests using the HPCC.
+
+## Important Info <a name="imprtinfo"></a>
 NEEDED FOR ALL CALLS!
 Get cookie from SSO
 https://case.edu/utech/help/knowledge-base/cwru-network-id-password/cas-single-sign-on-at-cwru-kba
 
 POST requests need an authenticity_token from the previous page, or session. Needed for Job Composer.
 
-## API General Info
+## API General Info <a name="geninfo"></a>
 API HOST: https://ondemand.case.edu
 
+## Active Jobs <a name="activejobs"></a>
 
-## Active Jobs
-
-### Get Jobs
+### Get Jobs <a name="getjobs"></a>
 
 Path: `/pun/sys/activejobs/json`
 
@@ -38,7 +61,7 @@ Filters: https://github.com/OSC/ood-activejobs/blob/master/app/models/filter.rb
 
 JSON Request Handler: https://github.com/OSC/ood-activejobs/blob/master/app/models/jobs_json_request_handler.rb
 
-## Job Composer
+## Job Composer <a name="jobcomposer"></a>
 
 #### Info
  See [here](https://stackoverflow.com/questions/10413803/getting-csrf-tokens-for-json-post-requests-to-a-rails-app) for a good explanation and how to put authenticity_token into json. Technically, this can be scrapped from any of the below requests if put in http response. TODO: Investigate an dedicated endpoint for this or update returned json to include this token.
@@ -46,7 +69,7 @@ JSON Request Handler: https://github.com/OSC/ood-activejobs/blob/master/app/mode
 #### Refrence 
 https://github.com/OSC/ood-myjobs/search?q=json&unscoped_q=json
 
-### Get My Jobs
+### Get My Jobs <a name="getmyjobs"></a>
 
 Path: `/pun/sys/myjobs`
 
@@ -58,7 +81,7 @@ Params: N/A
 
 Returns HTML that an application can scrape the authenticity_token. Temporary fix for the note in Job Composer
 
-### Get Jobs
+### Get Jobs <a name="getuserjobs"></a>
 
 Path: `/pun/sys/myjobs/workflows.json`
 
@@ -70,7 +93,7 @@ Params: N/A
 
 Get the user's created jobs. Returns JSON array of jobs.
 
-### Get Job by ID
+### Get Job by ID <a name="getjobid"></a>
 
 Path: `/pun/sys/myjobs/workflows/<JOB_ID>.json`
 
@@ -82,7 +105,7 @@ Params: N/A
 
 Get the user's created job by id. Returns JSON object of job.
 
-### Create Job with no Template
+### Create Job with no Template <a name="createjobnotemplate"></a>
 
 Path: `/pun/sys/myjobs/workflows.json`
 
@@ -94,7 +117,7 @@ Params: N/A
 
 Create a job based on no template. Returns JSON object of the job.
 
-### Create Default Job
+### Create Default Job <a name="createdefaultjob"></a>
 
 Path: `/pun/sys/myjobs/create_default.json`
 
@@ -106,7 +129,7 @@ Params: N/A
 
 Create a job based on the default template. Returns JSON object of the job.
 
-### Create Job From Path
+### Create Job From Path <a name="createjobfrompath"></a>
 
 Path: `/pun/sys/myjobs/create_from_path.json`
 
@@ -126,7 +149,7 @@ form-data:
 
 Create a job based on a template at a specified path. Returns JSON object of the job.
 
-### Copy Job
+### Copy Job <a name="copyjob"></a>
 
 Path: `/pun/sys/myjobs/workflows/<JOB_ID>/copy`
 
@@ -138,7 +161,7 @@ Params: N/A
 
 Create a job based on the default template. Returns JSON object of the job.
 
-### Submit Job by ID
+### Submit Job by ID <a name="submitjobbyid"></a>
 
 Path: `/pun/sys/myjobs/workflows/<JOB_ID>/submit.json`
 
@@ -150,7 +173,7 @@ Params: N/A
 
 Submit a job. Returns JSON object of the job deleted.
 
-### Stop Job by ID
+### Stop Job by ID <a name="stopjob"></a>
 
 Path: `/pun/sys/myjobs/workflows/<JOB_ID>/stop.json`
 
@@ -162,7 +185,7 @@ Params: N/A
 
 Stop a job. Returns JSON object of the job deleted.
 
-### Update Job by ID
+### Update Job by ID <a name="updatejob"></a>
 
 Path: `/pun/sys/myjobs/workflows/<JOB_ID>.json`
 
@@ -181,7 +204,7 @@ form-data:
 
 Update a job. Returns JSON object of the job.
 
-### Delete Job by ID
+### Delete Job by ID <a name="deletejobbyid"></a>
 
 Path: `/pun/sys/myjobs/workflows/<JOB_ID>/delete.json`
 
@@ -193,7 +216,7 @@ Params: N/A
 
 Delete a job. Returns JSON object of the job deleted.
 
-### Create Template
+### Create Job Template <a name="createjobtemplate"></a>
 
 Path: `/pun/sys/myjobs/templates.json`
 
@@ -213,7 +236,7 @@ form-data:
 
 Creates a template that can be used to create jobs. Returns template as JSON object.
 
-### Delete Template
+### Delete Job Template <a name="deletejobtemplate"></a>
 
 Path: `/pun/sys/myjobs/templates/<TEMPLATE_ID>.json`
 
