@@ -1,6 +1,6 @@
 # OpenOnDemand JSON API Docs
 
-# Table of contents
+## Table of contents
 1. [Introduction](#introduction)
 2. [Important Info](#imprtinfo)
 3. [API General Info](#geninfo)
