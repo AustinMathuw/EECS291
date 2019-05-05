@@ -4,15 +4,15 @@
 1. [Introduction](#intro)
 2. [Replication](#replication)
 3. [Next Steps](#next)
-4. [Refrences](#refs)
+4. [References](#refs)
 
 ## Introduction <a name="intro"></a>
 
-Over the course of the spring semester of 2019, I did research on OpenOnDemand and found an way to extend the platfrom without having to be constrained to their [Interactive Apps](https://osc.github.io/ood-documentation/master/app-development/interactive/setup.html). By digging into the OpenOnDemand GitHub, I learned of a RESTful API the was buried in the Ruby code of the webserver. There are endpoints for both the Active Jobs and the Job Composer modules of the [OpenOnDemand Platform](https://osc.github.io/ood-documentation/master/index.html).
+Over the course of the spring semester of 2019, I did research on OpenOnDemand and found an way to extend the platform without having to be constrained to their [Interactive Apps](https://osc.github.io/ood-documentation/master/app-development/interactive/setup.html). By digging into the OpenOnDemand GitHub, I learned of a RESTful API the was buried in the Ruby code of the webserver. There are endpoints for both the Active Jobs and the Job Composer modules of the [OpenOnDemand Platform](https://osc.github.io/ood-documentation/master/index.html).
 
 In this repository, you will find [documentation](https://github.com/AustinMathuw/EECS291/blob/master/API%20Docs.md) for all the endpoints, as well as a partial [implementation](https://github.com/AustinMathuw/EECS291/tree/master/HPCC%20Dashboard) of these endpoints.
 
-In the example implementation, the functional javascript is located in ["HPCC Dashboard/js/demo/dashboard.js"](https://github.com/AustinMathuw/EECS291/blob/master/HPCC%20Dashboard/js/demo/dashboard.js). The javascript preforms a call to `/js/data.json` which is a json file containing the response of a call made to the GET Jobs endpoint previously. The resoning for this is that, at the time of this writing, I am still awaiting permission to use proxy login with Case's [CAS Single Sign In](https://case.edu/utech/help/knowledge-base/cwru-network-id-password/cas-single-sign-on-at-cwru-kba) platform. See the [Next Steps](#next) section to see how to integrate the real API call into the HPCC Dashboard.
+In the example implementation, the functional javascript is located in ["HPCC Dashboard/js/demo/dashboard.js"](https://github.com/AustinMathuw/EECS291/blob/master/HPCC%20Dashboard/js/demo/dashboard.js). The javascript preforms a call to `/js/data.json` which is a json file containing the response of a call made to the GET Jobs endpoint previously. The reasoning for this is that, at the time of this writing, I am still awaiting permission to use proxy login with Case's [CAS Single Sign In](https://case.edu/utech/help/knowledge-base/cwru-network-id-password/cas-single-sign-on-at-cwru-kba) platform. See the [Next Steps](#next) section to see how to integrate the real API call into the HPCC Dashboard.
 
 ## Replication <a name="replication"></a>
 
@@ -30,19 +30,23 @@ Before you proceeded to replicate, note that the general dashboard was created u
 
 `cd "HPCC Dashboard"`
 
-6. In the terminal, run `npm install` to install all of the NodeJS dependincies for the project.
+6. In the terminal, run `npm install` to install all of the NodeJS dependencies for the project.
 
 7. Next, run the following command to enable browser-sync and allow live viewing of changes made to the project:
 
 `gulp watch`
 
-Gulp docmentation specific to this project can be found [here](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2#gulp-tasks).
+Gulp documentation specific to this project can be found [here](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2#gulp-tasks).
+
+8. That's it! Feel free to extend the project to your specific purposes using the resources found in the [References](#refs) section!
 
 ## Next Steps <a name="next"></a>
 
+A critical next step for this project is hooking up the Dashboard to the OpenOnDemand API via proxy login with Case's [CAS Single Sign In](https://case.edu/utech/help/knowledge-base/cwru-network-id-password/cas-single-sign-on-at-cwru-kba) platform.
 
+Some other next steps include adding the job composer functionalities or some analytics for the running jobs.
 
-## Refrences <a name="refs"></a>
+## References <a name="refs"></a>
 
 - [OpenOnDemand GitHub](https://osc.github.io/ood-documentation/master/index.html)
-  - Search "json" in respository to find relavent files.
+  - Search "json" in repository to find relevant files.
