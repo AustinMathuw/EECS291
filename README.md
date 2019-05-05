@@ -12,7 +12,7 @@ Over the course of the spring semester of 2019, I did research on OpenOnDemand a
 
 In this repository, you will find [documentation](https://github.com/AustinMathuw/EECS291/blob/master/API%20Docs.md) for all the endpoints, as well as a partial [implementation](https://github.com/AustinMathuw/EECS291/tree/master/HPCC%20Dashboard) of these endpoints.
 
-In the example implementation, the functional javascript is located in ["HPCC Dashboard/js/demo/dashboard.js"](https://github.com/AustinMathuw/EECS291/blob/master/HPCC%20Dashboard/js/demo/dashboard.js). The javascript preforms a call to `/js/data.json` which is a json file containing the response of a call made to the GET Jobs endpoint. The resoning for this is that, at the time of this writing, I am still awaiting permission to use proxy login with Case's [CAS Single Sign In](https://case.edu/utech/help/knowledge-base/cwru-network-id-password/cas-single-sign-on-at-cwru-kba) platform. See the [Next Steps](#next) section to see how to integrate the real API call into the HPCC Dashboard.
+In the example implementation, the functional javascript is located in ["HPCC Dashboard/js/demo/dashboard.js"](https://github.com/AustinMathuw/EECS291/blob/master/HPCC%20Dashboard/js/demo/dashboard.js). The javascript preforms a call to `/js/data.json` which is a json file containing the response of a call made to the GET Jobs endpoint previously. The resoning for this is that, at the time of this writing, I am still awaiting permission to use proxy login with Case's [CAS Single Sign In](https://case.edu/utech/help/knowledge-base/cwru-network-id-password/cas-single-sign-on-at-cwru-kba) platform. See the [Next Steps](#next) section to see how to integrate the real API call into the HPCC Dashboard.
 
 ## Replication <a name="replication"></a>
 
@@ -23,7 +23,9 @@ Before you proceeded to replicate, note that the general dashboard was created u
 
 `git clone https://github.com/AustinMathuw/EECS291.git`
 
-3. 
+3. Open the project in a code editor of your choice (VS Code, Notepad++, etc.)
+
+4. 
 
 ## Next Steps <a name="next"></a>
 
