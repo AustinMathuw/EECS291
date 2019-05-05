@@ -2,11 +2,12 @@
     "use strict"; // Start of use strict
 
     $(document).ready(function() {
-        setCookie('MOD_AUTH_CAS_S','3cbb605155fd4dd7234195302d954755','/pun/sys/','',100);
+        setCookie('MOD_AUTH_CAS_S','7041053fcb61593ebbe58e5a297846a8','','',100);
 
         var settings = {
         "async": true,
         'url': "/js/data.json",
+        //'url': 'https://ondemand.case.edu/pun/sys/activejobs/jobs.json?jobcluster=all&jobfilter=all',
         'dataType': "json",
         "method": "GET"
         }
@@ -27,7 +28,7 @@ function onResponse(data) {
     var numActive = 0;
     var averageTime = 0.0;
 
-    for(var x = 0; x < data.data.length; x++) {
+    for(var x = 0; x < data.data[0].length; x++) {
         var job = data.data[x];
         var newRow = tableRef.insertRow(tableRef.rows.length);
 

@@ -1,13 +1,16 @@
-# Aleternatives to HPCC
+# HPC in the AWS Cloud
 
 # Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
+1. [Why?](#why)
+    1. [Simplicity](#simplicity)
+    2. [Avaliability](#avaliability)
+    3. [Cost](#cost)
+2. [How?](#paragraph1)
     1. [Sub paragraph](#subparagraph1)
 3. [Another paragraph](#paragraph2)
 
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
+## Why? <a name="why"></a>
+
 
 ## Some paragraph <a name="paragraph1"></a>
 The first paragraph text
