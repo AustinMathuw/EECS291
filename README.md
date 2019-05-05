@@ -10,7 +10,7 @@
 
 Over the course of the spring semester of 2019, I did research on OpenOnDemand and found an way to extend the platform without having to be constrained to their [Interactive Apps](https://osc.github.io/ood-documentation/master/app-development/interactive/setup.html). By digging into the OpenOnDemand GitHub, I learned of a RESTful API the was buried in the Ruby code of the webserver. There are endpoints for both the Active Jobs and the Job Composer modules of the [OpenOnDemand Platform](https://osc.github.io/ood-documentation/master/index.html). Alongside the OpenOnDemand API, I also made a [tutorial](https://github.com/AustinMathuw/EECS291/blob/master/Using%20Git%20on%20the%20HPCC.md) on using Git with the HPCC. 
 
-In this repository, you will find [documentation](https://github.com/AustinMathuw/EECS291/blob/master/API%20Docs.md) for all the endpoints, as well as a partial [implementation](https://github.com/AustinMathuw/EECS291/tree/master/HPCC%20Dashboard) of these endpoints.
+In this repository, you will find [documentation](https://github.com/AustinMathuw/EECS291/blob/master/API%20Docs.md) for all the found OpenOnDemand RESTful API endpoints, a partial [implementation](https://github.com/AustinMathuw/EECS291/tree/master/HPCC%20Dashboard) of these endpoints, and a [tutorial](https://github.com/AustinMathuw/EECS291/blob/master/Using%20Git%20on%20the%20HPCC.md) on using Git with the HPCC. 
 
 ![Dashboard Implementation](https://github.com/AustinMathuw/EECS291/blob/master/Resources/dashboard.png)
 
