@@ -139,6 +139,8 @@ See [gitignore docs](https://git-scm.com/docs/gitignore) to learn more about ign
 
 **Note:** You may get an error that says *LF will be replaced by CRLF in README.md*. You may ignore this warning.
 
+![Warning](https://github.com/AustinMathuw/EECS291/blob/master/Resources/Stage%20Warning.PNG)
+
 **Note:** The `--all` flag tells Git that we want to stage all new, modified, and deleted files. See [the docs](https://git-scm.com/docs/git-add) to learn more.
 
 7. Commit the changes:
