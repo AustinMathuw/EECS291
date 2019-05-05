@@ -8,7 +8,7 @@ To read more about get, [check out this article by Atlassian](https://www.atlass
 
 ## Why use Git?
 
-The architecture of Git allows it to be very flexiable in nature. Unlike other version control systems, like Subversion, Git is a Distributed Version Control System. This means that, instead of keeping a log of all of the changes to a project in one place, every working location (or repositories) of the project has a copy of the log of all of the changes.
+The architecture of Git allows it to be very flexible in nature. Unlike other version control systems, like Subversion, Git is a Distributed Version Control System. This means that, instead of keeping a log of all of the changes to a project in one place, every working location (or repositories) of the project has a copy of the log of all of the changes.
 
 To read more about get, [check out this article by Atlassian](https://www.atlassian.com/git/tutorials/what-is-git).
 
@@ -64,18 +64,18 @@ On your local machine, install git from using the following links:
 
 You may be prompted to tell git who you are throughout this tutorial. If this does happen, follow the following steps:
 
- 1. Set your user email. This is an arbitry email and is only used for identification on edits to your repositories.
+ 1. Set your user email. This is an arbitrary email and is only used for identification on edits to your repositories.
 
  - Globally (Affects all repositories)
 	 `git config --global user.email "you@example.com"`
- - Locally (Afftects only the repository you are viewing
+ - Locally (Affects only the repository you are viewing
 	 `git config user.email "you@example.com"`
 
-2. Set your user name. This is an arbitry name and is only used for identification on edits to your repositories.
+2. Set your user name. This is an arbitrary name and is only used for identification on edits to your repositories.
 
  - Globally (Affects all repositories)
 	 `git config --global user.name "Your Name"`
- - Locally (Afftects only the repository you are viewing
+ - Locally (Affects only the repository you are viewing
 	 `git config user.name "Your Name"`
 
 ## Part 1: Create a new repository on the HPCC
@@ -100,7 +100,7 @@ To introduce working with the Git on the HPCC, we will use the HPCC as the remot
 
 ## Part 2: Clone a repo from the HPCC on your computer.
 
-1. After the installation succededs, open a terminal (Git Bash on Windows) and navigate to a directory you would like to clone the repository to.
+1. After the installation succeeds, open a terminal (Git Bash on Windows) and navigate to a directory you would like to clone the repository to.
 
 2. Next, clone the repository from the HPCC.
 
@@ -112,7 +112,7 @@ To introduce working with the Git on the HPCC, we will use the HPCC as the remot
 
 ## Part 3: Add files and push as a new branch from your computer to HPCC.
 
-As you make modifications to the repository, you may want to sync your changes with your repository on the HPCC. The steps below will help simultate this situation.
+As you make modifications to the repository, you may want to sync your changes with your repository on the HPCC. The steps below will help simulate this situation.
 
 1. Navigate to your repository in a file explorer.
 
@@ -153,7 +153,7 @@ At this point, we have created a repository on the HPCC, cloned the repository o
 
 ## Part 4: Pull from the HPCC to your computer
 
-If there are multiple people working on the same project, the origin may updated without your local clone knowing. To simultate this, follow these steps:
+If there are multiple people working on the same project, the origin may updated without your local clone knowing. To simulate this, follow these steps:
 
 1. In a directory away from you local clone of the repository, open a terminal, make another clone, and jump inside it:
 
