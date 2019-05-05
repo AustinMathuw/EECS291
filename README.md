@@ -2,7 +2,7 @@
 
 ## Table of contents
 1. [Introduction](#intro)
-2. [Replication](#replication)
+2. [Dashboard Replication](#replication)
 3. [Next Steps](#next)
 4. [References](#refs)
 
@@ -12,11 +12,13 @@ Over the course of the spring semester of 2019, I did research on OpenOnDemand a
 
 In this repository, you will find [documentation](https://github.com/AustinMathuw/EECS291/blob/master/API%20Docs.md) for all the endpoints, as well as a partial [implementation](https://github.com/AustinMathuw/EECS291/tree/master/HPCC%20Dashboard) of these endpoints.
 
+![Dashboard Implementation](https://github.com/AustinMathuw/EECS291/blob/master/Resources/dashboard.png)
+
 In the example implementation, the functional javascript is located in ["HPCC Dashboard/js/demo/dashboard.js"](https://github.com/AustinMathuw/EECS291/blob/master/HPCC%20Dashboard/js/demo/dashboard.js). The javascript preforms a call to `/js/data.json` which is a json file containing the response of a call made to the GET Jobs endpoint previously. The reasoning for this is that, at the time of this writing, I am still awaiting permission to use proxy login with Case's [CAS Single Sign In](https://case.edu/utech/help/knowledge-base/cwru-network-id-password/cas-single-sign-on-at-cwru-kba) platform. See the [Next Steps](#next) section to see how to integrate the real API call into the HPCC Dashboard.
 
-## Replication <a name="replication"></a>
+## Dashboard Replication <a name="replication"></a>
 
-Before you proceeded to replicate, note that the general dashboard was created using an admin theme provided located [here](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2).
+Before you proceeded to replicate the dashboard, note that the general dashboard was created using an admin theme provided located [here](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2).
 
 1. If git is not installed on your system, install from [here](https://git-scm.com/downloads). You only need the command line installation for our purposes.
 2. Install Node.js, if not already installed, from [here](https://nodejs.org/en/download/).
