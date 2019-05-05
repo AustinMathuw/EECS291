@@ -19,13 +19,24 @@ In the example implementation, the functional javascript is located in ["HPCC Da
 Before you proceeded to replicate, note that the general dashboard was created using an admin theme provided located [here](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2).
 
 1. If git is not installed on your system, install from [here](https://git-scm.com/downloads). You only need the command line installation for our purposes.
-2. Clone this repository to a known folder on you machine. To do this, navigate to the desired folder on your machine in a terminal and run the following command: 
+2. Install Node.js, if not already installed, from [here](https://nodejs.org/en/download/).
+3. Clone this repository to a known folder on you machine. To do this, navigate to the desired folder on your machine in a terminal and run the following command: 
 
 `git clone https://github.com/AustinMathuw/EECS291.git`
 
-3. Open the project in a code editor of your choice (VS Code, Notepad++, etc.)
+4. Open the project in a code editor of your choice (VS Code, Notepad++, etc.).
 
-4. 
+5. Open a terminal to the local repository change directory to HPCC Dashboard.
+
+`cd "HPCC Dashboard"`
+
+6. In the terminal, run `npm install` to install all of the NodeJS dependincies for the project.
+
+7. Next, run the following command to enable browser-sync and allow live viewing of changes made to the project:
+
+`gulp watch`
+
+Gulp docmentation specific to this project can be found [here](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2#gulp-tasks).
 
 ## Next Steps <a name="next"></a>
 
