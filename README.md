@@ -40,7 +40,7 @@ Before you proceeded to replicate the dashboard, note that the general dashboard
 
 Gulp documentation specific to this project can be found [here](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2#gulp-tasks).
 
-8. That's it! Feel free to extend the project to your specific purposes using the resources found in the [References](#refs) section!
+That's it! Feel free to extend the project to your specific purposes using the resources found in the [References](#refs) section! If you encountered any issues, the [theme's GitHub](https://github.com/BlackrockDigital/startbootstrap-sb-admin-2) may have the solution.
 
 ## Next Steps <a name="next"></a>
 
